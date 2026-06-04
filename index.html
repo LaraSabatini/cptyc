@@ -935,18 +935,20 @@
         </div>
       </div>
     </div>
-    <div class="contacto-form">
+    <form class="contacto-form" id="contacto-form" action="https://formspree.io/f/xnjynpwp" method="POST" novalidate>
+      <input type="hidden" name="_subject" value="Nueva consulta desde cptyc.com">
+      <input type="hidden" name="_language" value="es">
       <div class="form-group">
-        <label>Nombre completo</label>
-        <input type="text" placeholder="Tu nombre">
+        <label for="cf-nombre">Nombre completo</label>
+        <input id="cf-nombre" type="text" name="nombre" placeholder="Tu nombre" required>
       </div>
       <div class="form-group">
-        <label>Email</label>
-        <input type="email" placeholder="tu@email.com">
+        <label for="cf-email">Email</label>
+        <input id="cf-email" type="email" name="email" placeholder="tu@email.com" required>
       </div>
       <div class="form-group">
-        <label>Curso de interés</label>
-        <select>
+        <label for="cf-curso">Curso de interés</label>
+        <select id="cf-curso" name="curso">
           <option value="">Seleccioná una formación</option>
           <optgroup label="Formaciones">
             <option>Diplomatura en Terapia Transpersonal</option>
@@ -979,11 +981,12 @@
         </select>
       </div>
       <div class="form-group">
-        <label>Mensaje</label>
-        <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+        <label for="cf-mensaje">Mensaje</label>
+        <textarea id="cf-mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
       </div>
-      <button class="form-submit">Enviar consulta</button>
-    </div>
+      <div id="form-feedback" class="form-feedback" style="display:none;"></div>
+      <button type="submit" class="form-submit" id="form-submit-btn">Enviar consulta</button>
+    </form>
   </div>
 </section>
 
@@ -1070,6 +1073,55 @@
       }
     });
   });
+
+  // Formulario de contacto — Formspree AJAX
+  const contactForm = document.getElementById('contacto-form');
+  const feedback    = document.getElementById('form-feedback');
+  const submitBtn   = document.getElementById('form-submit-btn');
+
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Validación básica
+    const nombre = contactForm.nombre.value.trim();
+    const email  = contactForm.email.value.trim();
+    const mensaje = contactForm.mensaje.value.trim();
+    if (!nombre || !email || !mensaje) {
+      mostrarFeedback('Por favor completá los campos obligatorios.', 'error');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        mostrarFeedback('¡Mensaje enviado! Te contactamos a la brevedad.', 'ok');
+        contactForm.reset();
+      } else {
+        const data = await res.json();
+        const msg = data.errors ? data.errors.map(e => e.message).join(', ') : 'Error al enviar.';
+        mostrarFeedback(msg, 'error');
+      }
+    } catch {
+      mostrarFeedback('No se pudo conectar. Intentá de nuevo o escribinos por WhatsApp.', 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Enviar consulta';
+    }
+  });
+
+  function mostrarFeedback(msg, tipo) {
+    feedback.textContent = msg;
+    feedback.className = 'form-feedback form-feedback--' + tipo;
+    feedback.style.display = 'block';
+    feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
 </script>
 
 <!-- WhatsApp flotante -->
