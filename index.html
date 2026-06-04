@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CPTyC - Centro de Psicología Transpersonal y Conciencia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#inicio" class="nav-logo">
+    <img src="images/logo-crop.png" alt="CPTyC Logo" style="height:50px;width:auto;">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li class="dropdown">
+      <a class="dropdown-label" href="#cursos">Formaciones</a>
+      <div class="dropdown-menu">
+        <a href="#cursos">Cursos</a>
+      </div>
+    </li>
+    <li><a href="#ciclos" style="text-align:center; line-height:1.2;">Ciclos Complementarios</a></li>
+    <li><a href="#manuales" style="text-align:center; line-height:1.2;">Manuales Didácticos</a></li>
+    <li><a href="#libros">Libros</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#testimonios">Testimonios</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Formación profesional online</p>
+    <h1>Centro de Psicología<br>Transpersonal y Conciencia</h1>
+    <p class="hero-subtitle">Expandí tu conciencia. Transformá tu vida. Ayudá a otros.</p>
+    <div class="hero-badges">
+      <span class="badge">100% Online</span>
+      <span class="badge">Cursos Certificados</span>
+      <span class="badge">Terapias Alternativas</span>
+    </div>
+    <a href="#cursos" class="hero-cta">Ver cursos</a>
+  </div>
+  <div class="hero-logos">
+    <!-- ATHTA Logo SVG -->
+    <div class="hero-logo-athta-wrap">
+      <svg width="90" height="70" viewBox="0 0 240 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- Yin Yang circle -->
+        <circle cx="120" cy="65" r="52" fill="white" opacity="0.9"/>
+        <path d="M120 13 A52 52 0 0 1 120 117 A26 26 0 0 1 120 65 A26 26 0 0 0 120 13Z" fill="#555"/>
+        <circle cx="120" cy="39" r="13" fill="#555"/>
+        <circle cx="120" cy="91" r="13" fill="white"/>
+        <circle cx="120" cy="39" r="5" fill="white"/>
+        <circle cx="120" cy="91" r="5" fill="#555"/>
+        <!-- Lotus petals below -->
+        <ellipse cx="100" cy="120" rx="18" ry="10" fill="white" opacity="0.85" transform="rotate(-20 100 120)"/>
+        <ellipse cx="120" cy="125" rx="18" ry="10" fill="white" opacity="0.9"/>
+        <ellipse cx="140" cy="120" rx="18" ry="10" fill="white" opacity="0.85" transform="rotate(20 140 120)"/>
+        <ellipse cx="85" cy="115" rx="14" ry="8" fill="white" opacity="0.6" transform="rotate(-40 85 115)"/>
+        <ellipse cx="155" cy="115" rx="14" ry="8" fill="white" opacity="0.6" transform="rotate(40 155 115)"/>
+        <!-- ATHTA text -->
+        <text x="120" y="165" font-family="Georgia, serif" font-size="28" font-weight="500" fill="white" text-anchor="middle" letter-spacing="4">ATHTA</text>
+      </svg>
+    </div>
+    <!-- CPTyC Logo SVG -->
+    <div class="hero-logo-cptyc-wrap">
+      <svg width="160" height="70" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Icon -->
+        <ellipse cx="40" cy="50" rx="36" ry="36" stroke="rgba(255,255,255,0.9)" stroke-width="2" fill="none"/>
+        <ellipse cx="40" cy="62" rx="6" ry="11" fill="rgba(255,255,255,0.6)"/>
+        <ellipse cx="40" cy="62" rx="6" ry="11" fill="rgba(255,255,255,0.5)" transform="rotate(28 40 62)"/>
+        <ellipse cx="40" cy="62" rx="6" ry="11" fill="rgba(255,255,255,0.5)" transform="rotate(-28 40 62)"/>
+        <ellipse cx="40" cy="62" rx="5" ry="9" fill="rgba(255,255,255,0.3)" transform="rotate(52 40 62)"/>
+        <ellipse cx="40" cy="62" rx="5" ry="9" fill="rgba(255,255,255,0.3)" transform="rotate(-52 40 62)"/>
+        <circle cx="40" cy="32" r="5" fill="rgba(255,255,255,0.95)"/>
+        <path d="M40 38 Q33 44 32 52 Q40 49 48 52 Q47 44 40 38Z" fill="rgba(255,255,255,0.8)"/>
+        <circle cx="40" cy="26" r="2.2" fill="rgba(255,255,255,0.9)"/>
+        <circle cx="40" cy="20" r="1.6" fill="rgba(255,255,255,0.6)"/>
+        <circle cx="40" cy="15" r="1.1" fill="rgba(255,255,255,0.4)"/>
+        <!-- Text -->
+        <text x="90" y="42" font-family="Georgia, serif" font-size="32" font-weight="600" fill="white" opacity="0.95" letter-spacing="1">CPTyC</text>
+        <text x="90" y="62" font-family="Georgia, serif" font-size="11" fill="rgba(255,255,255,0.75)" font-style="italic">Centro de Psicología</text>
+        <text x="90" y="76" font-family="Georgia, serif" font-size="11" fill="rgba(255,255,255,0.75)" font-style="italic">Transpersonal y Conciencia</text>
+      </svg>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>↓</span>
+    <span style="font-size:0.65rem;">Explorar</span>
+  </div>
+</section>
+
+
+<!-- FRANJA FRASE -->
+<div class="frase-banner">
+  <p>Expandí tu vocación<span></span>Ejercé tu profesión<span></span>Transformá tu vida.</p>
+</div>
+
+
+<!-- CURSOS -->
+<section id="cursos" style="background: white; padding: 90px 40px;">
+  <div class="centered">
+    <span class="section-label">Formación profesional</span>
+    <h2 class="section-title">Formaciones</h2>
+    <p class="section-desc">Formaciones completas para desarrollarte como terapeuta o facilitador en distintas disciplinas del bienestar integral y la psicología transpersonal.</p>
+  </div>
+  <div class="cursos-grid">
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-ad9f93c48715.jpg" alt="Diplomatura en Terapia Transpersonal">
+      <div class="curso-body">
+        <h3 class="curso-title">Diplomatura en Terapia Transpersonal</h3>
+        <p class="curso-desc">Explorá la dimensión trascendente del ser humano. Esta formación te brinda herramientas para acompañar procesos de autorrealización, integrando lo psicológico con lo espiritual para facilitar una transformación profunda.</p>
+        <a href="cursos/curso-terapeuta-transpersonal.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-14e5e17eb18d.jpg" alt="Diplomatura en Terapia Holística">
+      <div class="curso-body">
+        <h3 class="curso-title">Diplomatura en Terapia Holística</h3>
+        <p class="curso-desc">Una formación integral para aprender a acompañar procesos de bienestar, autoconocimiento y transformación personal desde una mirada holística, ética y profesional. Aborda al ser humano como una unidad de cuerpo, mente, emoción, energía, vínculos y espiritualidad.</p>
+        <a href="cursos/curso-terapeuta-holistico.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-323b5beed002.jpg" alt="Registros Akáshicos">
+      <div class="curso-body">
+        <h3 class="curso-title">Consultor/a en Registros Akáshicos, Tarot Junguiano y Armonización Energética</h3>
+        <p class="curso-desc">Formación integral en tres ejes complementarios: Registros Akáshicos, Tarot Junguiano y Armonización Energética para diseñar consultas simbólicas, energéticas y espirituales.</p>
+        <a href="cursos/curso-consultor-registros-tarot.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-774b20c748ea.jpg" alt="Tarot Junguiano">
+      <div class="curso-body">
+        <h3 class="curso-title">Tarot Junguiano</h3>
+        <p class="curso-desc">Una formación orientada a integrar el Tarot, la psicología profunda y la mirada simbólica como herramientas de autoconocimiento y transformación personal. Recorrés los Arcanos Mayores como un mapa del viaje psíquico, explorando arquetipos e inconsciente.</p>
+        <a href="cursos/curso-tarot-junguiano.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-e33ea24aee08.jpg" alt="Mindfulness">
+      <div class="curso-body">
+        <h3 class="curso-title">Instructor/a en Mindfulness</h3>
+        <p class="curso-desc">Formación completa en Mindfulness organizada en 15 módulos: fundamentos, programa MBSR, aplicaciones profesionales en salud mental, educación, niñez y neurociencias.</p>
+        <a href="cursos/curso-instructor-mindfulness.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-21587b2d0079.jpg" alt="Registros Akáshicos">
+      <div class="curso-body">
+        <h3 class="curso-title">Registros Akáshicos</h3>
+        <p class="curso-desc">Formación en la lectura de Registros Akáshicos: fundamentos, sistema energético, karma, seres de luz, sesiones de lectura, péndulo y métodos de liberación simbólica.</p>
+        <a href="cursos/curso-registros-akashicos.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-098d8dc16bc4.jpg" alt="Terapeuta Espiritual">
+      <div class="curso-body">
+        <h3 class="curso-title">Terapeuta Espiritual</h3>
+        <p class="curso-desc">Formación en acompañamiento espiritual que integra espiritualidad, logoterapia, árbol genealógico, niño interior, EFT, psicología energética, intuición y ética profesional para acompañar procesos de crecimiento interior y sanación simbólica.</p>
+        <a href="cursos/curso-terapeuta-espiritual.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-7aa5756ca5fa.jpg" alt="Armonización Energética">
+      <div class="curso-body">
+        <h3 class="curso-title">Terapeuta en Armonización Energética</h3>
+        <p class="curso-desc">Formación práctica para comprender y aplicar recursos de armonización energética: chakras, diagnóstico energético, herramientas minerales, aromáticas y sonoras, protocolos de sesión y trabajo a distancia.</p>
+        <a href="cursos/curso-armonizacion-energetica.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-3e6f5760e375.jpg" alt="Biopsicoprogramación">
+      <div class="curso-body">
+        <h3 class="curso-title">Instructor/a en Biopsicoprogramación</h3>
+        <p class="curso-desc">Formación para comprender y aplicar recursos de Psicobioprogramación orientados al desarrollo personal, la reprogramación interna, la regulación emocional y el trabajo con creencias, subconsciente y subpersonalidades.</p>
+        <a href="cursos/curso-biopsicoprogramacion.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-77491b83591e.jpg" alt="Gestalt">
+      <div class="curso-body">
+        <h3 class="curso-title">Instructor/a Gestáltico en Desarrollo Personal</h3>
+        <p class="curso-desc">Formación en herramientas gestálticas para acompañar procesos de desarrollo personal, conciencia emocional, presencia y autoobservación. Trabajás el aquí y ahora, el darse cuenta, el contacto, el ciclo de la experiencia y técnicas gestálticas aplicadas.</p>
+        <a href="cursos/curso-gestaltico.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-e442702fb03a.jpg" alt="Psicología del Alma">
+      <div class="curso-body">
+        <h3 class="curso-title">Psicología del Alma</h3>
+        <p class="curso-desc">Formación en la dimensión profunda, simbólica y espiritual de la experiencia humana. Explorás ego, sombra, heridas del alma, sueños, intuición, propósito, vínculos álmicos y trascendencia.</p>
+        <a href="cursos/curso-psicologia-alma.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-c776c1554da5.jpg" alt="Dinámicas Vinculares">
+      <div class="curso-body">
+        <h3 class="curso-title">Facilitador/a de Dinámicas Vinculares y Conciencia Sistémica</h3>
+        <p class="curso-desc">Formación en dinámicas vinculares y sistemas humanos desde una mirada relacional y sistémica. Trabajás vínculos, roles, lealtades, comunicación asertiva, gestión de conflictos y facilitación grupal.</p>
+        <a href="cursos/curso-dinamicas-vinculares.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+<div class="curso-card">
+        <img class="curso-img" src="images/img-49525bdb2b13.jpg" alt="Filosofía Perenne">
+        <div class="curso-body">
+          <span class="curso-tag">Curso</span>
+          <h3 class="curso-title">Filosofía Perenne</h3>
+          <p class="curso-desc">Un recorrido cálido y profundo por la sabiduría esencial de las grandes tradiciones espirituales. Exploraremos el núcleo común entre mística, símbolo, contemplación y psicología transpersonal, para recuperar una mirada más amplia, sagrada y consciente de la existencia.</p>
+          <a href="cursos/curso-filosofia-perenne.html" class="curso-btn">+ Más info</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- CURSOS CORTOS -->
+<section id="cursos-cortos" style="background: #ffffff; padding: 90px 40px;">
+  <div class="cursos-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); max-width: 1100px;">
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-dd5a966b1686.jpg" alt="Niño Interior">
+      <div class="curso-body">
+        <h3 class="curso-title">Sanación del Niño Interior</h3>
+        <p class="curso-desc">Un proceso de autoconocimiento, sanación simbólica e integración emocional para reconocer las heridas tempranas, sanar el Niño Interior y construir una relación más libre y compasiva con tu historia.</p>
+        <a href="cursos/curso-nino-interior.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-0b40fc030d91.jpg" alt="Mindfulness Ansiedad">
+      <div class="curso-body">
+        <h3 class="curso-title">Mindfulness para Ansiedad y Estrés</h3>
+        <p class="curso-desc">Herramientas de mindfulness para cultivar presencia, regulación emocional y autocuidado frente a la ansiedad y el estrés cotidiano. Recursos simples y progresivos para integrar en tu rutina diaria.</p>
+        <a href="cursos/curso-mindfulness-ansiedad.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-2ff8869dc015.jpg" alt="Chakras">
+      <div class="curso-body">
+        <h3 class="curso-title">Chakras y Equilibrio Energético</h3>
+        <p class="curso-desc">Formación en el sistema de chakras como mapa energético, psicológico y transpersonal del ser humano. Explorás cada chakra con prácticas de visualización, respiración, sonido, mantras y meditación.</p>
+        <a href="cursos/curso-chakras.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-4f4e7adfb1b2.jpg" alt="Limpieza Energética">
+      <div class="curso-body">
+        <h3 class="curso-title">Limpieza Energética Personal y de Espacios</h3>
+        <p class="curso-desc">Herramientas prácticas para la limpieza y protección energética personal y de espacios: sahumos, cristales, agua, sal, sonido, símbolos y rutinas de higiene energética cotidiana.</p>
+        <a href="cursos/curso-limpieza-energetica.html" class="curso-btn">+ Más info</a>
+      </div>
+      
+  </div>
+</section>
+
+<!-- CICLOS -->
+<section id="ciclos" style="background: white; padding: 90px 40px;">
+  <div class="centered">
+    <span class="section-label">Nivel avanzado</span>
+    <h2 class="section-title">Ciclos Complementarios</h2>
+    <p class="section-desc">Especializaciones superiores para profundizar y ampliar tu formación profesional con un enfoque integrador y de alto nivel.</p>
+  </div>
+  <div class="cursos-grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); max-width: 1200px;">
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-9d5cc2604570.jpg" alt="Psicología Holística">
+      <div class="curso-body">
+        <h3 class="curso-title">Psicología Holística y Acompañamiento Integral</h3>
+        <p class="curso-desc">Una especialización que te brinda una mirada integral del ser humano, contemplando mente, cuerpo, emociones, espíritu, vínculos y contexto. Integrás herramientas de psicología holística, terapias de base psicológica, gestión emocional, abordaje corporal-energético y habilidades de consultoría y acompañamiento profesional.</p>
+        <a href="ciclos/ciclo-psicologia-holistica.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-810c3242e11b.jpg" alt="Psicología del Alma Logoterapia">
+      <div class="curso-body">
+        <h3 class="curso-title">Psicología del Alma y Logoterapia</h3>
+        <p class="curso-desc">Una especialización que te invita a explorar la dimensión más profunda del ser humano: el sentido de la existencia, la libertad interior, el sufrimiento como camino de transformación y el propósito de vida, integrando los aportes de Viktor Frankl y la Logoterapia con una mirada transpersonal y espiritual.</p>
+        <a href="ciclos/ciclo-psicologia-alma-logoterapia.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-14abf5715d36.jpg" alt="Transgeneracional">
+      <div class="curso-body">
+        <h3 class="curso-title">Abordaje Transgeneracional y Emocional</h3>
+        <p class="curso-desc">Una especialización que te brinda herramientas para comprender la influencia de la historia familiar, los mandatos, las lealtades invisibles, los secretos y las memorias emocionales en los procesos personales. Trabajás con genograma, árbol familiar, proyecto sentido, niño interior y reparación simbólica desde un enfoque no clínico y ético.</p>
+        <a href="ciclos/ciclo-transgeneracional.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-46310211af42.jpg" alt="Terapias Energéticas">
+      <div class="curso-body">
+        <h3 class="curso-title">Terapias Energéticas, Vibracionales y Acompañamiento Espiritual</h3>
+        <p class="curso-desc">Una especialización que te brinda herramientas concretas para comprender y aplicar recursos energéticos, vibracionales y espirituales desde un encuadre ético y profesional. Aprendés a trabajar con chakras, aura, flores de Bach, cromoterapia, cristales, sonido, aromaterapia y recursos de limpieza energética hasta el diseño de sesiones integrales.</p>
+        <a href="ciclos/ciclo-terapias-energeticas.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-9449b4fdd414.jpg" alt="Psicología Transpersonal">
+      <div class="curso-body">
+        <h3 class="curso-title">Psicología Transpersonal y Procesos de Transformación Interior</h3>
+        <p class="curso-desc">Una especialización que te brinda una comprensión profunda de la Psicología Transpersonal, su relación con la conciencia, la espiritualidad, la psicología junguiana y los procesos simbólicos de transformación interior. Aprendés a acompañar procesos de crecimiento profundo integrando prácticas transpersonales, trabajo con la sombra, los sueños y los arquetipos.</p>
+        <a href="ciclos/ciclo-psicologia-transpersonal.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+
+
+    <div class="curso-card">
+      <img class="curso-img" src="images/img-58e76b0b2a67.jpg" alt="Mindfulness">
+      <div class="curso-body">
+        <h3 class="curso-title">Especialización Superior en Mindfulness</h3>
+        <p class="curso-desc">Formación avanzada en Mindfulness que integra fundamentos contemplativos, entrenamiento MBSR, neurociencias y aplicaciones profesionales para acompañar procesos de bienestar, presencia y regulación emocional.</p>
+        <a href="ciclos/ciclo-mindfulness-especializacion.html" class="curso-btn">+ Más info</a>
+      </div>
+    </div>
+      <div class="curso-card">
+        <img class="curso-img" src="images/img-9fee2432f2ff.jpg" alt="Fenomenología del Camino Perenne">
+        <div class="curso-body">
+          <span class="curso-tag">Ciclo Complementario</span>
+          <h3 class="curso-title">Fenomenología del Camino Perenne y Psicología de la Unidad</h3>
+          <p class="curso-desc">Una profundización vivencial y psicológica en el camino perenne: crisis del ego, trabajo con la sombra, silencio interior, no-dualidad y contemplación en la acción. Una propuesta para integrar conciencia, compasión y unidad en la vida cotidiana.</p>
+          <a href="ciclos/ciclo-fenomenologia-camino-perenne.html" class="curso-btn">+ Más info</a>
+        </div>
+      </div>
+
+  </div>
+</section>
+
+<!-- ATHTA -->
+<section id="athta" style="background: linear-gradient(135deg, var(--teal-dark) 0%, #0d4a4a 100%); padding: 90px 40px;">
+  <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 60px; margin-bottom: 48px;">
+      <img src="images/img-a311aa6f7feb.png" alt="Logo CPTyC" style="width: 130px; height: 130px; object-fit: contain;">
+      <div style="width: 1px; height: 100px; background: rgba(255,255,255,0.2);"></div>
+      <img src="images/img-b93e15505742.png" alt="Logo ATHTA" style="width: 100px; height: 100px; object-fit: contain;">
+    </div>
+    <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 400; color: white; margin-bottom: 12px;">Formación avalada a nivel internacional</h2>
+    <div style="width: 60px; height: 1px; background: rgba(255,255,255,0.3); margin: 24px auto;"></div>
+    <p style="font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.8; margin-bottom: 20px;">
+      CPTyC es miembro activo de <strong>ATHTA</strong> — Asociación de Terapeutas Hispanoamericanos Transpersonales y Alternativos.
+    </p>
+    <p style="font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.8; margin-bottom: 32px; font-style: italic;">
+      Nuestras certificaciones están avaladas por dicha asociación, garantizando la calidad y el reconocimiento profesional de cada formación.
+    </p>
+    <div style="width: 60px; height: 1px; background: rgba(255,255,255,0.3); margin: 0 auto 28px;"></div>
+    <p style="font-size: 1rem; color: rgba(255,255,255,0.85); font-weight: 500;">
+      Formarte en CPTyC es formarte con respaldo, trayectoria y reconocimiento.
+    </p>
+  </div>
+</section>
+
+<!-- CERTIFICADO -->
+<section id="certificado" style="background: linear-gradient(135deg, #f0fafa 0%, #e6f4f4 100%); padding: 90px 40px;">
+  <div class="centered" style="max-width: 900px; margin: 0 auto; text-align: center;">
+    <span class="section-label">Reconocimiento oficial</span>
+    <h2 class="section-title" style="color: var(--teal-dark);">Tu Certificado</h2>
+    <p style="color: #555; font-size: 1.05rem; line-height: 1.8; margin-bottom: 48px; max-width: 620px; margin-left: auto; margin-right: auto;">
+      Al completar tu formación recibís el certificado de CPTyC, miembro de ATHTA, que acredita tus estudios y avala tu trayectoria profesional.
+    </p>
+    <div style="display: inline-block; box-shadow: 0 20px 60px rgba(0,0,0,0.12); border-radius: 12px; overflow: hidden; max-width: 680px; width: 100%;">
+      <img src="images/img-41a395bd3467.png" alt="Certificado CPTyC" style="width: 100%; display: block;" />
+    </div>
+  </div>
+</section>
+
+
+<!-- LIBROS -->
+<!-- MANUALES DIDÁCTICOS -->
+<section id="manuales" style="background: #f7fafa; padding: 90px 40px;">
+  <div class="centered">
+    <span class="section-label">CPTyC</span>
+    <h2 class="section-title">Manuales Didácticos</h2>
+  </div>
+  <div class="libros-grid">
+        <div class="libro-card">
+      <img src="images/img-993f1eab1d67.jpg" alt="Terapia Transpersonal" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Terapia Transpersonal</h3>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $16.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20manual%3A%20Terapia%20Transpersonal" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-262b400fc1fa.jpg" alt="Terapia Holística" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Terapia Holística</h3>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $16.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20manual%3A%20Terapia%20Hol%C3%ADstica" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-faa2c5ab2326.jpg" alt="Terapia Sistémica" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Terapia Sistémica</h3>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $16.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20manual%3A%20Terapia%20Sist%C3%A9mica" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <a href="colecciones/manuales-didacticos.html" class="ver-mas-btn">Ver colección completa →</a>
+</section>
+
+<!-- BANDA LIBROS -->
+<section style="background: linear-gradient(135deg, var(--teal-dark) 0%, #0d4a4a 100%); padding: 60px 40px;">
+  <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <p style="font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 700; font-style: italic; color: white; line-height: 1.7; margin: 0;">
+      Conocé y apasionate con nuestras colecciones de libros.
+    </p>
+    <p style="font-size: 1rem; color: rgba(255,255,255,0.75); margin-top: 16px; font-family: 'Montserrat', sans-serif; font-weight: 300; letter-spacing: 0.03em;">
+      Disponibles en <strong style="color: rgba(255,255,255,0.95);">PDF</strong>, <strong style="color: rgba(255,255,255,0.95);">ePub</strong> y <strong style="color: rgba(255,255,255,0.95);">Audiolibro</strong>.<br>
+      Cada título es una invitación a mirarte por dentro, comprenderte y seguir creciendo.
+    </p>
+  </div>
+</section>
+
+<!-- LIBROS -->
+<!-- MANUALES DIDÁCTICOS -->
+<section id="libros" style="background: white; padding: 90px 40px;">
+  <div class="centered">
+    <span class="section-label">Publicaciones</span>
+    <h2 class="section-title">Libros</h2>
+    <p class="section-desc">Una colección de libros de autoayuda y desarrollo personal para acompañarte en tu proceso de crecimiento y transformación interior.</p>
+  </div>
+
+  <!-- ÚLTIMOS LANZAMIENTOS -->
+  <div class="centered" style="margin-bottom: 40px;">
+    <span class="section-label">Novedades</span>
+    <h2 class="section-title">Últimos Lanzamientos</h2>
+    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--teal-medium); font-weight: 500; margin-top: 10px; margin-bottom: 0; letter-spacing: 0.03em;">Colección: Las Emociones</h3>
+    <p class="section-desc">Los libros más recientes de la colección <em>Conciencia Integral</em>, dedicados a comprender y transformar nuestras emociones más profundas.</p>
+  </div>
+  <div class="libros-grid">
+        <div class="libro-card">
+      <img src="images/img-452a44122017.jpg" alt="La Ira" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">La Ira</h3>
+        <p class="libro-resena">La ira es una guía práctica para comprender, regular y transformar el enojo. A través de explicaciones claras y ejercicios simples, invita a reconocer sus detonantes, su impacto en el cuerpo y su influencia en los vínculos. Un libro para dejar de reaccionar en automático y convertir la ira en claridad, límite y autocuidado.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20La%20Ira" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-1d29dd36619b.jpg" alt="El Asco" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">El Asco</h3>
+        <p class="libro-resena">El asco es una guía para comprender una emoción incómoda pero profundamente protectora. A través de un recorrido claro y reflexivo, invita a reconocer el rechazo como frontera entre lo propio, lo ajeno, lo tóxico y lo digno. Un libro para transformar la náusea en conciencia, límite e integración personal.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20El%20Asco" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-89f0db5480ce.jpg" alt="La Tristeza" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">La Tristeza</h3>
+        <p class="libro-resena">La tristeza es una guía sensible para comprender una emoción que no viene a detenernos, sino a pedirnos pausa y cuidado. A través de metáforas claras y ejercicios simples, invita a reconocer el dolor, atravesar los duelos y acompañar los días grises con ternura. Un libro para transformar la tristeza en escucha, profundidad y resiliencia.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20La%20Tristeza" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <a href="colecciones/coleccion-emociones.html" class="ver-mas-btn">Ver colección completa →</a>
+
+</section>
+
+
+<section style="background: #f7fafa; padding: 90px 40px;">
+  <div class="centered" style="margin-bottom: 50px;">
+    <span class="section-label">Colección</span>
+    <h2 class="section-title">Los Pecados Capitales</h2>
+    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--teal-medium); font-weight: 500; margin-top: 8px; font-style: italic;">Las siete sombras del alma</h3>
+    <div style="margin: 40px auto; max-width: 240px;">
+      <img src="images/img-ebf1c28dc650.png" alt="Los Pecados Capitales - Colección completa" style="width:100%; border-radius:8px; box-shadow: 0 12px 40px rgba(0,0,0,0.2);">
+    </div>
+  </div>
+  <div class="libros-grid">
+    <div class="libro-card">
+      <img src="images/img-7f8f4e49cacb.png" alt="Soberbia" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Soberbia — <em style="font-weight:400">El culto del yo</em></h3>
+        <p class="libro-resena">Una indagación sobre el orgullo, la máscara y el espejismo del yo. Cuando la imagen propia se vuelve altar, el alma se distancia de su verdad y comienza la caída silenciosa.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20Soberbia%20-%20El culto del yo" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="libro-card">
+      <img src="images/img-d8320861f87c.png" alt="Avaricia" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Avaricia — <em style="font-weight:400">La sed de poseer</em></h3>
+        <p class="libro-resena">Un viaje al deseo de poseer, retener y acumular. Allí donde nada alcanza, la abundancia se vacía de sentido y el corazón aprende que no todo valor puede guardarse.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20Avaricia%20-%20La sed de poseer" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="libro-card">
+      <img src="images/img-9e615008d5a8.png" alt="Lujuria" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Lujuria — <em style="font-weight:400">El deseo sin límite</em></h3>
+        <p class="libro-resena">Una exploración del deseo cuando deja de ser impulso vital y se convierte en desborde. Entre seducción, fascinación y vértigo, el cuerpo revela su sombra más intensa.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20Lujuria%20-%20El deseo sin límite" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <a href="colecciones/coleccion-pecados-capitales.html" class="ver-mas-btn">Ver colección completa →</a>
+</section>
+
+
+<!-- RICARDO ROBLES -->
+<section style="background: #f0fafa; padding: 70px 40px;">
+  <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <span class="section-label">Autor invitado</span>
+    <h2 class="section-title" style="color: var(--teal-dark);">Ricardo Robles</h2>
+    <div style="width: 60px; height: 1px; background: var(--teal-medium); margin: 24px auto 32px;"></div>
+    <p style="font-size: 1.05rem; color: #444; line-height: 1.9; font-family: 'Cormorant Garamond', serif; font-style: italic;">
+      Ricardo Robles es un escritor argentino de reconocida trayectoria, galardonado en múltiples ocasiones con el <strong style="font-style: normal;">Primer Premio Voces Hispanas</strong> (España), obtenido en 1994, 1998 y 2018.
+    </p>
+    <p style="font-size: 1rem; color: #555; line-height: 1.85; margin-top: 20px;">
+      Su obra explora con profundidad y sensibilidad las dimensiones más íntimas del ser humano: las heridas emocionales, los vínculos, la conciencia y el crecimiento interior. Con una escritura que combina rigor psicológico y belleza literaria, sus libros acompañan a los lectores en procesos genuinos de autoconocimiento y transformación.
+    </p>
+    <p style="font-size: 1rem; color: #555; line-height: 1.85; margin-top: 20px;">
+      Actualmente reside en la Patagonia argentina, donde continúa escribiendo y desarrollando su obra.
+    </p>
+  </div>
+</section>
+
+<section style="background: #f7fafa; padding: 90px 40px;">
+  <div class="centered" style="margin-bottom: 50px;">
+    <span class="section-label">Colección</span>
+    <h2 class="section-title">Las Heridas del Alma</h2>
+    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--teal-medium); font-weight: 500; margin-top: 10px; font-style: italic;">Ricardo Robles</h3>
+  </div>
+  <div class="libros-grid">
+    <div class="libro-card">
+      <img src="images/img-f8e797fd5225.png" alt="Abandono" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Abandono — <em style="font-weight:400">La casa que no espera</em></h3>
+        <p class="libro-resena">Explora la herida de no haber sido esperado, sostenido o elegido. Un recorrido para dejar de vivir temiendo que todo amor termine yéndose.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20Abandono%20-%20La casa que no espera" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="libro-card">
+      <img src="images/img-94f9dc7dade9.png" alt="Rechazo" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Rechazo — <em style="font-weight:400">La puerta cerrada</em></h3>
+        <p class="libro-resena">Aborda el dolor de sentirse afuera del deseo, del vínculo o del mundo. Una invitación a recuperar el derecho a existir sin pedir permiso para entrar.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20Rechazo%20-%20La puerta cerrada" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="libro-card">
+      <img src="images/img-f2c279aff367.png" alt="Humillación" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Humillación — <em style="font-weight:400">El rostro caído</em></h3>
+        <p class="libro-resena">Explora la marca de haber sido mirado desde la vergüenza o la desvalorización. Un camino para levantar el rostro y recuperar la dignidad herida.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20Humillación%20-%20El rostro caído" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <a href="colecciones/coleccion-heridas-alma.html" class="ver-mas-btn">Ver colección completa →</a>
+</section>
+
+
+<section style="background: white; padding: 90px 40px;">
+  <div class="centered" style="margin-bottom: 50px;">
+    <span class="section-label">Colección</span>
+    <h2 class="section-title">Las Cárceles Invisibles</h2>
+    <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--teal-medium); font-weight: 500; margin-top: 10px; font-style: italic;">Ricardo Robles</h3>
+  </div>
+  <div class="libros-grid">
+    <div class="libro-card">
+      <img src="images/img-a5560315c1d6.png" alt="La Necesidad de Aprobación" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">La Necesidad de Aprobación — <em style="font-weight:400">Vivir bajo la mirada ajena</em></h3>
+        <p class="libro-resena">Una mirada sobre la cárcel de vivir pendiente del juicio ajeno. Un camino para recuperar la voz propia y existir sin pedir permiso.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20La Necesidad de Aprobación" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="libro-card">
+      <img src="images/img-2cff0bf6711c.png" alt="El Miedo al Conflicto" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">El Miedo al Conflicto — <em style="font-weight:400">Callar para no perder al otro</em></h3>
+        <p class="libro-resena">Explora el silencio que parece cuidar el vínculo, pero termina apagando la verdad. Una invitación a descubrir que decir también puede reparar.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20El Miedo al Conflicto" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+    <div class="libro-card">
+      <img src="images/img-4cf2abddda50.png" alt="La Culpa" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">La Culpa — <em style="font-weight:400">Pagar deudas que no son propias</em></h3>
+        <p class="libro-resena">Aborda el peso de cargar deudas emocionales que no nos pertenecen. Un recorrido para soltar el sacrificio y recuperar el deseo propio.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>PDF</strong>, <strong>ePub</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $15.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 12</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20adquirir%20el%20libro%3A%20La Culpa" target="_blank" class="libro-btn">🛒 Adquirir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <a href="colecciones/coleccion-carceles-invisibles.html" class="ver-mas-btn">Ver colección completa →</a>
+</section>
+
+<section style="background: #f7fafa; padding: 90px 40px;">
+  <div class="centered" style="margin-bottom: 40px;">
+    <span class="section-label">Colección</span>
+    <h2 class="section-title">El Arte de...</h2>
+  </div>
+  <div class="libros-grid">
+        <div class="libro-card">
+      <img src="images/img-f350ef944561.jpg" alt="El arte de alcanzar metas" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">El arte de alcanzar metas</h3>
+        <p class="libro-resena">Un enfoque práctico y motivador para definir y alcanzar objetivos conscientes. Guía al lector a planificar con flexibilidad, superar obstáculos internos y mantener la motivación a largo plazo.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20El%20arte%20de%20alcanzar%20metas" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-46d47477de27.jpg" alt="El arte de gestionar el tiempo" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">El arte de gestionar el tiempo</h3>
+        <p class="libro-resena">Una invitación a repensar nuestra relación con el tiempo desde una mirada más humana y consciente. Propone herramientas prácticas para equilibrar eficiencia y bienestar, habitando los días con mayor presencia y sentido.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20El%20arte%20de%20gestionar%20el%20tiempo" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-501036fcbb77.jpg" alt="El arte de tomar decisiones" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">El arte de tomar decisiones</h3>
+        <p class="libro-resena">Una guía práctica que ofrece estrategias claras para elegir con confianza en un mundo cambiante. Desde manejar el estrés hasta confiar en la intuición, acompaña el desarrollo de una toma de decisiones consciente y efectiva.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20El%20arte%20de%20tomar%20decisiones" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <a href="colecciones/coleccion-arte.html" class="ver-mas-btn">Ver colección completa →</a>
+</section>
+
+<section style="background: white; padding: 90px 40px;">
+  <div class="centered" style="margin-bottom: 40px;">
+    <span class="section-label">Publicaciones</span>
+    <h2 class="section-title">Otros Libros</h2>
+  </div>
+  <div class="libros-grid">
+        <div class="libro-card">
+      <img src="images/img-9e54921ec609.jpg" alt="Una vida más liviana" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Una vida más liviana</h3>
+        <p class="libro-resena">Una invitación a soltar cargas invisibles y reconectar con una forma de vivir más consciente y amable. Reflexiones profundas, relatos cotidianos y preguntas de autorreflexión para quienes sienten que viven en automático y buscan alivio sin desconectarse de la realidad.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20Una%20vida%20más%20liviana" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-446df0da7cd2.jpg" alt="Prisiones mentales" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Prisiones mentales</h3>
+        <p class="libro-resena">Una invitación a reconocer las estructuras internas que condicionan nuestra forma de vivir, pensar y vincularnos. Explora miedos, creencias, mandatos y exigencias que operan en silencio. Un recorrido profundo, humano y transformador.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20Prisiones%20mentales" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+        <div class="libro-card">
+      <img src="images/img-45f18d4a96f4.jpg" alt="Relaciones tóxicas. Vivir en carne viva" class="libro-img">
+      <div class="libro-body">
+        <h3 class="libro-titulo">Relaciones tóxicas. Vivir en carne viva</h3>
+        <p class="libro-resena">Una guía profunda y honesta que acompaña a quienes sufren vínculos dañinos, ayudándolos a reconocer señales, romper ciclos de dependencia y culpa, y reconstruir su identidad desde la conciencia y el amor propio.</p>
+        <p class="libro-formato">📄 Disponible en: <strong>ePub</strong>, <strong>PDF</strong> y <strong>Audiolibro</strong> 🎧</p>
+        <div class="libro-precio">
+          <span class="precio-arg">🇦🇷 Argentina: $11.000</span>
+          <span class="precio-ext">🌍 Exterior: USD 10</span>
+        </div>
+        <a href="https://wa.me/5491131184422?text=Hola%2C%20me%20interesa%20comprar%20el%20libro%3A%20Relaciones%20tóxicas.%20Vivir%20en%20carne%20viva" target="_blank" class="libro-btn">🛒 Comprar por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <a href="colecciones/otros-libros.html" class="ver-mas-btn">Ver colección completa →</a>
+</section>
+<!-- NOSOTROS -->
+<section id="nosotros">
+  <div class="nosotros-inner">
+    <div class="nosotros-text">
+      <span class="section-label">Nuestra historia</span>
+      <h2 class="section-title">Quiénes Somos</h2>
+      <p>El Centro de Psicología Transpersonal y Conciencia (CPTyC) nació con la convicción de que el crecimiento personal es un camino que integra la mente, el cuerpo y el espíritu.</p>
+      <p>Nuestra propuesta formativa combina el rigor académico con la profundidad de las tradiciones de sabiduría, ofreciendo herramientas concretas para el desarrollo personal y profesional.</p>
+      <p>Nuestros cursos están diseñados para personas que desean formarse como terapeutas o facilitadores, y también para quienes buscan herramientas de autoconocimiento y expansión de conciencia.</p>
+
+      <div class="directora-bloque">
+        <div class="directora-titulo">Dirección</div>
+        <div class="directora-nombre">Lidia Mazzola</div>
+        <p class="directora-bio">Traductora literaria y técnico científica, Psicóloga Social, Terapeuta Transpersonal, Gestáltica, Holística Integral (Internacional) y Sistémica, Psicodramatista, Arteterapeuta y Especialista en Neurociencias, Emociones y Salud Mental. Con más de 30 años de trayectoria, es directora del Centro de Psicología Transpersonal y Conciencia (CPTyC), docente, consultora y escritora comprometida con el desarrollo de la conciencia y el bienestar humano.</p>
+      </div>
+    </div>
+    <div class="nosotros-values">
+      <div class="value-card">
+        <div class="value-icon">🌿</div>
+        <h4>Integración</h4>
+        <p>Unimos psicología, espiritualidad y neurociencias en una visión integral del ser humano.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">✨</div>
+        <h4>Excelencia</h4>
+        <p>Formaciones de calidad con docentes comprometidos con tu proceso de crecimiento.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🌍</div>
+        <h4>Alcance global</h4>
+        <p>Llegamos a estudiantes de Argentina y todo el mundo a través de nuestra plataforma online.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">💫</div>
+        <h4>Transformación</h4>
+        <p>Acompañamos procesos reales de cambio interior con herramientas probadas y profundas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TESTIMONIOS -->
+<section id="testimonios">
+  <div class="centered">
+    <span class="section-label">Voces de nuestra comunidad</span>
+    <h2 class="section-title">Testimonios</h2>
+    <p class="section-desc">Lo que dicen quienes ya transitaron su formación en el CPTyC.</p>
+  </div>
+  <div class="testimonios-grid">
+    <div class="testimonio-card">
+      <p class="testimonio-text">El curso de Diplomatura en Terapia Transpersonal cambió mi vida de una manera que no esperaba. No solo aprendí herramientas para trabajar con otros, sino que transformé mi propia mirada sobre mí misma y el mundo.</p>
+      <div class="testimonio-autor">María L.</div>
+      <div class="testimonio-curso">Diplomatura en Terapia Transpersonal</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">La calidad del contenido y el acompañamiento que recibí superaron todas mis expectativas. Pude estudiar a mi ritmo, desde casa, y sentirme parte de una comunidad real de aprendizaje.</p>
+      <div class="testimonio-autor">Rodrigo M.</div>
+      <div class="testimonio-curso">Instructor en Mindfulness</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">El curso de Registros Akáshicos me abrió una dimensión de trabajo completamente nueva. Hoy lo integro a mi práctica terapéutica y los resultados con mis consultantes son increíbles.</p>
+      <div class="testimonio-autor">Valeria S.</div>
+      <div class="testimonio-curso">Registros Akáshicos</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">Llegué al CPTyC buscando algo diferente, y lo encontré. El enfoque transpersonal me dio un marco de comprensión que integra lo espiritual y lo psicológico de una manera que nunca había visto en otra formación.</p>
+      <div class="testimonio-autor">Luciana P.</div>
+      <div class="testimonio-curso">Psicología del Alma</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">Completé la formación en Tarot Junguiano y fue reveladora. Los contenidos están muy bien estructurados y los docentes tienen una profundidad y calidez que se siente desde el primer módulo.</p>
+      <div class="testimonio-autor">Sebastián R.</div>
+      <div class="testimonio-curso">Tarot Junguiano</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">Hoy ejerzo como terapeuta y buena parte de lo que soy profesionalmente se lo debo a esta formación. El acompañamiento del equipo fue clave en cada etapa del proceso.</p>
+      <div class="testimonio-autor">Camila F.</div>
+      <div class="testimonio-curso">Diplomatura en Terapia Holística</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">La formación en Armonización Energética me dio herramientas concretas que empecé a aplicar desde el primer mes. Muy recomendable para quienes quieren profundizar en el trabajo con energía de manera seria y fundamentada.</p>
+      <div class="testimonio-autor">Jorge A.</div>
+      <div class="testimonio-curso">Terapeuta en Armonización Energética</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">El curso de Niño Interior fue de los más movilizadores que hice. No solo desde lo profesional, sino desde lo personal. Es una formación que te transforma y te da recursos genuinos para acompañar a otros.</p>
+      <div class="testimonio-autor">Florencia G.</div>
+      <div class="testimonio-curso">Sanación del Niño Interior</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">Lo que más valoro del CPTyC es la coherencia entre lo que enseñan y cómo lo enseñan. Hay un cuidado real por el proceso de cada alumno que no es fácil de encontrar en otros espacios de formación online.</p>
+      <div class="testimonio-autor">Daniela V.</div>
+      <div class="testimonio-curso">Instructor/a en Biopsicoprogramación</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">Estudiar Mindfulness para Ansiedad y Estrés me cambió la vida cotidiana. Las herramientas son prácticas, profundas y aplicables desde el primer día. Recomendaría este curso a cualquier persona, sea o no profesional de la salud.</p>
+      <div class="testimonio-autor">Martín B.</div>
+      <div class="testimonio-curso">Mindfulness para Ansiedad y Estrés</div>
+    </div>
+    <div class="testimonio-card">
+      <p class="testimonio-text">La Especialización en Mindfulness me permitió consolidar una práctica que hoy es el eje de mi trabajo clínico. La solidez académica y la profundidad espiritual de la formación son una combinación única.</p>
+      <div class="testimonio-autor">Andrea N.</div>
+      <div class="testimonio-curso">Especialización Superior en Mindfulness</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+  <div class="centered" style="margin-bottom: 56px;">
+    <span class="section-label">Escribinos</span>
+    <h2 class="section-title">Contacto</h2>
+    <p class="section-desc">¿Tenés dudas sobre algún curso? ¿Querés saber cuál es el mejor camino para tu formación? Escribinos y te respondemos a la brevedad.</p>
+  </div>
+  <div class="contacto-inner">
+    <div class="contacto-info">
+      <p>Estamos para acompañarte en el proceso de elegir la formación que mejor se adapte a tus intereses y objetivos. No dudes en consultarnos.</p>
+      <div class="contacto-item">
+        <div class="contacto-icon">✉️</div>
+        <div>
+          <div class="contacto-label">Email</div>
+          <div class="contacto-value">info@cptyc.com</div>
+        </div>
+      </div>
+      <div class="contacto-item">
+        <div class="contacto-icon">📱</div>
+        <div>
+          <div class="contacto-label">WhatsApp</div>
+          <div class="contacto-value">+54 9 11 3118 4422</div>
+        </div>
+      </div>
+      <div class="contacto-item">
+        <div class="contacto-icon">🌐</div>
+        <div>
+          <div class="contacto-label">Modalidad</div>
+          <div class="contacto-value">100% Online · Argentina y el mundo</div>
+        </div>
+      </div>
+    </div>
+    <div class="contacto-form">
+      <div class="form-group">
+        <label>Nombre completo</label>
+        <input type="text" placeholder="Tu nombre">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="tu@email.com">
+      </div>
+      <div class="form-group">
+        <label>Curso de interés</label>
+        <select>
+          <option value="">Seleccioná una formación</option>
+          <optgroup label="Formaciones">
+            <option>Diplomatura en Terapia Transpersonal</option>
+            <option>Diplomatura en Terapia Holística</option>
+            <option>Consultor/a en Registros Akáshicos, Tarot Junguiano y Armonización Energética</option>
+            <option>Tarot Junguiano</option>
+            <option>Instructor/a en Mindfulness</option>
+            <option>Registros Akáshicos</option>
+            <option>Terapeuta Espiritual</option>
+            <option>Terapeuta en Armonización Energética</option>
+            <option>Instructor/a en Biopsicoprogramación</option>
+            <option>Instructor/a Gestáltico en Desarrollo Personal</option>
+            <option>Psicología del Alma</option>
+            <option>Filosofía Perenne</option>
+            <option>Facilitador/a de Dinámicas Vinculares y Conciencia Sistémica</option>
+            <option>Sanación del Niño Interior</option>
+            <option>Mindfulness para Ansiedad y Estrés</option>
+            <option>Chakras y Equilibrio Energético</option>
+            <option>Limpieza Energética Personal y de Espacios</option>
+          </optgroup>
+          <optgroup label="Ciclos Complementarios">
+            <option>Especialización en Psicología Holística y Acompañamiento Integral</option>
+            <option>Especialización en Psicología del Alma y Logoterapia</option>
+            <option>Especialización en Abordaje Transgeneracional y Emocional</option>
+            <option>Especialización en Terapias Energéticas, Vibracionales y Acompañamiento Espiritual</option>
+            <option>Especialización en Psicología Transpersonal y Procesos de Transformación Interior</option>
+            <option>Fenomenología del Camino Perenne y Psicología de la Unidad</option>
+            <option>Especialización Superior en Mindfulness</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mensaje</label>
+        <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+      </div>
+      <button class="form-submit">Enviar consulta</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+
+    <!-- Logo CPTyC izquierda -->
+    <div class="footer-logo-left">
+      <img src="images/img-cfbbba97a68b.png" " alt="CPTyC" style="height:160px;width:auto;">
+    </div>
+    <!-- Centro -->
+    <div class="footer-center">
+      <p class="footer-reconocido"><strong>Reconocido por la Asociación de Terapeutas<br>Hispanoamericanos Transpersonales y Alternativos</strong></p>
+      <p class="footer-desc">Formación profesional online · Argentina y el mundo</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61590529109010" target="_blank" class="social-btn" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="white">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/cptyc.argentina/" target="_blank" class="social-btn" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4.5"/>
+            <circle cx="17.5" cy="6.5" r="1.2" fill="white" stroke="none"/>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/@CptycArgentina" target="_blank" class="social-btn" aria-label="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 24 24" fill="white">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+            <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1a3333"/>
+          </svg>
+        </a>
+      </div>
+      <hr class="footer-divider">
+      <p class="footer-copy">© 2025 CPTyC. Todos los derechos reservados.</p>
+    </div>
+
+    <!-- Logo ATHTA derecha -->
+    <div class="footer-logo-right">
+      <svg width="90" height="90" viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="120" cy="75" r="58" fill="rgba(255,255,255,0.08)" stroke="rgba(126,200,200,0.4)" stroke-width="1.5"/>
+        <path d="M120 17 A58 58 0 0 1 120 133 A29 29 0 0 1 120 75 A29 29 0 0 0 120 17Z" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="120" cy="46" r="14" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="120" cy="104" r="14" fill="rgba(126,200,200,0.4)"/>
+        <circle cx="120" cy="46" r="5" fill="rgba(126,200,200,0.6)"/>
+        <circle cx="120" cy="104" r="5" fill="rgba(255,255,255,0.6)"/>
+        <ellipse cx="100" cy="145" rx="20" ry="11" fill="rgba(126,200,200,0.4)" transform="rotate(-20 100 145)"/>
+        <ellipse cx="120" cy="150" rx="20" ry="11" fill="rgba(126,200,200,0.5)"/>
+        <ellipse cx="140" cy="145" rx="20" ry="11" fill="rgba(126,200,200,0.4)" transform="rotate(20 140 145)"/>
+        <ellipse cx="84" cy="138" rx="15" ry="8" fill="rgba(126,200,200,0.25)" transform="rotate(-42 84 138)"/>
+        <ellipse cx="156" cy="138" rx="15" ry="8" fill="rgba(126,200,200,0.25)" transform="rotate(42 156 138)"/>
+        <text x="120" y="195" font-family="Georgia, serif" font-size="32" font-weight="500" fill="rgba(126,200,200,0.85)" text-anchor="middle" letter-spacing="5">ATHTA</text>
+      </svg>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  const hamburger = document.getElementById('nav-hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    hamburger.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a:not(.dropdown-label)').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+    });
+  });
+  document.querySelectorAll('.dropdown-label').forEach(label => {
+    label.addEventListener('click', e => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        label.closest('.dropdown').classList.toggle('open');
+      }
+    });
+  });
+</script>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/5491131184422?text=Hola%2C%20me%20comunico%20desde%20la%20p%C3%A1gina%20web%20del%20CPTyC." 
+   class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.469 2.027 7.774L0 32l8.458-2.01A15.938 15.938 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.792-1.865l-.487-.29-5.02 1.194 1.216-4.893-.317-.502A13.269 13.269 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.27-9.878c-.398-.199-2.354-1.162-2.719-1.294-.365-.133-.631-.199-.897.199-.266.398-1.03 1.294-1.263 1.56-.232.266-.465.299-.863.1-.398-.2-1.681-.62-3.202-1.976-1.183-1.056-1.982-2.36-2.214-2.758-.232-.398-.025-.613.175-.811.18-.178.398-.465.597-.698.2-.232.266-.398.398-.664.133-.266.067-.498-.033-.697-.1-.2-.897-2.163-1.23-2.96-.323-.778-.651-.672-.897-.685l-.764-.013c-.266 0-.697.1-1.063.498-.365.398-1.395 1.362-1.395 3.325s1.428 3.857 1.627 4.123c.2.266 2.811 4.29 6.812 6.017.952.411 1.695.657 2.274.841.955.304 1.825.261 2.513.158.767-.114 2.354-.962 2.686-1.891.333-.93.333-1.727.233-1.892-.1-.165-.365-.265-.763-.464z"/>
+  </svg>
+</a>
+<div class="whatsapp-tooltip">¡Escribinos por WhatsApp!</div>
+</body>
+</html>

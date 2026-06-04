@@ -1,0 +1,71 @@
+:root { --teal-dark:#1a6b6b; --teal-mid:#2a9090; --teal-light:#7ec8c8; --teal-pale:#f0f9f9; --text-dark:#1a3333; --text-mid:#3d6060; --text-light:#6a9a9a; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:'Jost',sans-serif; background:#fff; color:var(--text-dark); overflow-x:hidden; }
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(255,255,255,0.97); backdrop-filter:blur(12px); border-bottom:1px solid rgba(42,144,144,0.12); padding:0 40px; display:flex; align-items:center; justify-content:space-between; height:72px; box-shadow:0 2px 16px rgba(26,107,107,0.07); }
+  .nav-logo { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .logo-acronym { font-family:'Cormorant Garamond',serif; font-size:1.5rem; font-weight:600; color:var(--teal-dark); line-height:1; letter-spacing:0.05em; }
+  .logo-full { font-family:'Cormorant Garamond',serif; font-size:0.72rem; font-style:italic; color:var(--text-mid); line-height:1.3; max-width:200px; }
+  .nav-back { display:flex; align-items:center; gap:8px; text-decoration:none; color:var(--teal-mid); font-size:0.82rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:500; transition:color .2s; }
+  .nav-back:hover { color:var(--teal-dark); }
+  .curso-hero { margin-top:72px; background:linear-gradient(135deg, var(--teal-dark) 0%, #0d4a4a 100%); padding:80px 40px 70px; color:white; text-align:center; }
+  .eyebrow { font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase; color:rgba(255,255,255,0.8); font-weight:500; margin-bottom:16px; display:block; }
+  .curso-hero h1 { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(2rem,5vw,3.8rem); line-height:1.15; margin-bottom:18px; }
+  .curso-hero .subtitulo { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.15rem; color:rgba(255,255,255,0.82); max-width:640px; margin:0 auto 32px; line-height:1.8; }
+  .hero-chips { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+  .chip { border:1px solid rgba(255,255,255,0.5); border-radius:100px; padding:6px 16px; font-size:0.75rem; letter-spacing:0.07em; color:rgba(255,255,255,0.9); }
+  .page-body { max-width:1100px; margin:0 auto; padding:60px 40px; display:grid; grid-template-columns:1fr 340px; gap:60px; align-items:start; }
+  .content-col h2 { font-family:'Cormorant Garamond',serif; font-weight:400; font-size:1.9rem; color:var(--teal-dark); margin-bottom:16px; }
+  .content-col p { font-size:0.93rem; line-height:1.85; color:var(--text-mid); font-weight:300; margin-bottom:14px; }
+  .section-divider { border:none; border-top:1px solid rgba(42,144,144,0.15); margin:40px 0; }
+  .programa-label { font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--teal-mid); font-weight:500; margin-bottom:24px; display:block; }
+  .modulo { border:1px solid rgba(42,144,144,0.15); border-radius:12px; margin-bottom:12px; overflow:hidden; }
+  .modulo-header { display:flex; align-items:center; justify-content:space-between; padding:16px 20px; cursor:pointer; background:white; transition:background .2s; }
+  .modulo-header:hover { background:var(--teal-pale); }
+  .modulo-num { font-size:0.68rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--teal-mid); font-weight:500; margin-bottom:2px; }
+  .modulo-title { font-family:'Cormorant Garamond',serif; font-size:1.1rem; color:var(--teal-dark); font-weight:600; }
+  .modulo-arrow { color:var(--teal-mid); font-size:1rem; transition:transform .3s; flex-shrink:0; }
+  .modulo.open .modulo-arrow { transform:rotate(180deg); }
+  .modulo-body { display:none; padding:14px 20px 20px; background:var(--teal-pale); }
+  .modulo.open .modulo-body { display:block; }
+  .modulo-body p { font-size:0.88rem; color:var(--text-mid); font-weight:300; line-height:1.75; margin-bottom:0; }
+  .logros { list-style:none; margin-top:12px; }
+  .logros li { font-size:0.9rem; color:var(--text-mid); font-weight:300; padding:8px 0; border-bottom:1px solid rgba(42,144,144,0.1); display:flex; gap:10px; line-height:1.6; }
+  .logros li:last-child { border-bottom:none; }
+  .logros li::before { content:'✦'; color:var(--teal-light); font-size:0.65rem; margin-top:5px; flex-shrink:0; }
+  .nota-legal { background:var(--teal-pale); border-left:3px solid var(--teal-light); border-radius:0 8px 8px 0; padding:16px 20px; margin-top:20px; font-size:0.82rem; color:var(--text-light); font-weight:300; line-height:1.7; font-style:italic; }
+  .sidebar { position:sticky; top:90px; }
+  .precio-card { background:white; border:1.5px solid rgba(42,144,144,0.2); border-radius:16px; padding:32px; box-shadow:0 8px 32px rgba(26,107,107,0.09); }
+  .precio-label { font-size:0.7rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--text-light); font-weight:500; margin-bottom:8px; }
+  .precio-amount { font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:600; color:var(--teal-dark); line-height:1; margin-bottom:4px; }
+  .precio-currency { font-size:1.4rem; vertical-align:super; }
+  .precio-nota { font-size:0.78rem; color:var(--text-light); font-weight:300; margin-bottom:24px; line-height:1.6; }
+  .precio-divider { border:none; border-top:1px solid rgba(42,144,144,0.12); margin:20px 0; }
+  .precio-features { list-style:none; margin-bottom:28px; }
+  .precio-features li { display:flex; align-items:flex-start; gap:10px; font-size:0.85rem; color:var(--text-mid); font-weight:300; padding:7px 0; border-bottom:1px solid rgba(42,144,144,0.08); }
+  .precio-features li:last-child { border-bottom:none; }
+  .precio-features li::before { content:'✓'; color:var(--teal-mid); font-weight:600; flex-shrink:0; }
+  .btn-inscribir { display:block; width:100%; background:var(--teal-mid); color:white; border:none; border-radius:10px; padding:15px; font-family:'Jost',sans-serif; font-size:0.88rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; cursor:pointer; transition:background .25s; text-align:center; text-decoration:none; margin-bottom:10px; }
+  .btn-inscribir:hover { background:var(--teal-dark); }
+  .btn-consultar { display:block; width:100%; border:1.5px solid var(--teal-mid); color:var(--teal-mid); border-radius:10px; padding:13px; font-family:'Jost',sans-serif; font-size:0.85rem; letter-spacing:0.08em; text-transform:uppercase; font-weight:500; cursor:pointer; transition:all .25s; text-align:center; text-decoration:none; background:transparent; }
+  .btn-consultar:hover { background:var(--teal-pale); }
+  .garantia { text-align:center; margin-top:18px; font-size:0.75rem; color:var(--text-light); font-weight:300; line-height:1.6; }
+  @media(max-width:768px) { .page-body { grid-template-columns:1fr; padding:40px 20px; } .sidebar { position:static; } nav { padding:0 20px; } }
+
+  .inscripcion-section { max-width:1100px; margin:0 auto 60px; padding:0 40px; }
+  .inscripcion-title { font-family:'Cormorant Garamond',serif; font-size:2rem; font-weight:400; color:var(--teal-dark); margin-bottom:8px; }
+  .inscripcion-subtitle { font-size:0.9rem; color:var(--text-mid); font-weight:300; margin-bottom:30px; }
+  .inscripcion-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  @media(max-width:700px) { .inscripcion-grid { grid-template-columns:1fr; } .inscripcion-section { padding:0 20px; } }
+  .pago-card { border:1.5px solid rgba(42,144,144,0.2); border-radius:16px; padding:28px; background:white; box-shadow:0 4px 20px rgba(26,107,107,0.07); }
+  .pago-card-title { font-family:'Cormorant Garamond',serif; font-size:1.3rem; color:var(--teal-dark); font-weight:600; margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+  .pago-datos { list-style:none; margin-bottom:20px; }
+  .pago-datos li { font-size:0.88rem; color:var(--text-mid); font-weight:300; padding:7px 0; border-bottom:1px solid rgba(42,144,144,0.08); display:flex; gap:10px; }
+  .pago-datos li:last-child { border-bottom:none; }
+  .pago-datos li strong { color:var(--text-dark); font-weight:500; min-width:80px; }
+  .btn-transferencia { display:block; width:100%; background:var(--teal-mid); color:white; border:none; border-radius:10px; padding:14px; font-family:'Jost',sans-serif; font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; cursor:pointer; text-align:center; text-decoration:none; transition:background .25s; }
+  .btn-transferencia:hover { background:var(--teal-dark); }
+  .btn-wise { display:block; width:100%; background:#9fe870; color:#1a3300; border:none; border-radius:10px; padding:14px; font-family:'Jost',sans-serif; font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:500; cursor:pointer; text-align:center; text-decoration:none; transition:background .25s; }
+  .btn-wise:hover { background:#7ecf50; }
+  .pago-nota { font-size:0.78rem; color:var(--text-light); font-weight:300; margin-top:12px; text-align:center; line-height:1.6; font-style:italic; }
+  .inscripcion-divider { border:none; border-top:2px solid rgba(42,144,144,0.1); margin:60px 0 40px; }
